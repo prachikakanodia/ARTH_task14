@@ -1,0 +1,2 @@
+[docker]
+{{ docker_info['container']['NetworkSettings']['IPAddress'] }} ansible_user=root ansible_ssh_pass=passwd ansible_connection=ssh
