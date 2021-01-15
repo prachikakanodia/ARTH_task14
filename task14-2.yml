@@ -27,12 +27,12 @@
   - name: Installing Docker SDK for python3
     command: "pip3 install docker.py"
 
-  - name: Pull Docker httpd Image
+  - name: Pull Docker Image
     docker_image:
           name: "sshcentos:latest"
           source: pull
 
-  - name: "Launching{{ container_name }} container"
+  - name: "Launching {{ container_name }} container"
     docker_container:
           name: "{{ container_name }}"
           image: "sshcentos:latest"
