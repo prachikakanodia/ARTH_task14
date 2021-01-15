@@ -47,7 +47,7 @@
     register: docker_info
 
   - debug:
-         var: dcoker_info.container.NetworkSettings.IPAddress
+         var: docker_info.container.NetworkSettings.IPAddress
 
   - name: "Retrieving IP dynamically and updating in the Inventory file"
     template:
